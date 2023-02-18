@@ -31,7 +31,8 @@ class Config:
                     if "username" != accs[account]["username"]:
                         self.accounts[account] = {
                             "username": accs[account]["username"],
-                            "password": accs[account]["password"]
+                            "password": accs[account]["password"],
+                            "discordid": accs[account]["discordid"],
                         }                    
                 if not self.accounts:
                     raise InvalidCredentialsException                    
