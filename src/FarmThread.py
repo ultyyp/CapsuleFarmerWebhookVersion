@@ -100,8 +100,9 @@ class FarmThread(Thread):
                     }
 
                     params = {
-                        "username" : "CapsuleFarmerEvolved",
-                        "embeds": [embed]
+                        "username" : "Clerence",
+                        "embeds": [embed],
+                        "content": "<@" + str(self.config.getAccount(self.account)["discordid"]) + ">" 
                     }
                     requests.post(self.config.connectorDrops, headers={"Content-type":"application/json"}, json=params)
             else:
